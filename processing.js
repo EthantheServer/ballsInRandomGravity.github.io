@@ -1,4 +1,4 @@
-var programCode = function(processingInstance) {
+const programCode = (processingInstance) => {
   with (processingInstance) {
     size(400, 395);
     frameRate(30);
@@ -75,6 +75,6 @@ var programCode = function(processingInstance) {
   }
 };
 
-var canvas = document.getElementById("mycanvas");
+const canvas = document.getElementById("mycanvas");
 
-var processingInstance = new Processing(canvas, programCode);
+const processingInstance = new Processing(canvas, programCode);
